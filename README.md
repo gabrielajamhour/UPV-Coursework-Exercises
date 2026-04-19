@@ -1,6 +1,6 @@
 # University Coursework Repository
 
-This repository contains coding projects and exercises developed throughout my university studies in Computer Science and Business Administration.
+This repository contains coding projects and exercises developed throughout my university studies in Computer Engineering and Business Administration.
 
 ## 🎯 Purpose
 
@@ -15,22 +15,11 @@ The repository includes work from various courses, such as:
 - Operations and Process Design
 - Data Analysis and Business-related subjects
 
-Each folder is typically organized by course or topic and may include:
-
-- Assignments and exercises
-- Small projects
-- Case studies
-- Supporting documentation
+Each folder is typically organized by course and may include assignments, exercises and small projects.
 
 ## 🛠️ Technologies
 
-Depending on the course, the projects may involve different tools and languages, including:
-
-- Python
-- Java
-- C
-- Basic web technologies (HTML, CSS)
-- Data analysis tools
+Depending on the course, the projects may involve different tools and languages, especially Java and C.
 
 ## 📈 Evolution
 
