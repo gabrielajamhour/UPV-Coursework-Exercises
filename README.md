@@ -10,10 +10,12 @@ The goal of this repository is to document my academic journey and showcase how 
 
 The repository includes work from various courses, such as:
 
-- Programming and Software Development
-- Data Structures and Algorithms
-- Operations and Process Design
-- Data Analysis and Business-related subjects
+- Computer Architecture
+- Operating Systems Fundamentals
+- Introduction to Computer Science and Programming
+- Programming Languages, Technologies, and Paradigms
+- Programming
+- Computer Networks
 
 Each folder is typically organized by course and may include assignments, exercises and small projects.
 
