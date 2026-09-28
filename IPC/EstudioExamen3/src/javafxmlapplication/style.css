@@ -1,0 +1,34 @@
+.tituloPrincipal {
+    -fx-text-fill: seagreen;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.codigo {
+    -fx-text-fill: indianred;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+}
+
+.codigo:disabled {
+    -fx-opacity: 1.0;
+}
+
+.etiquetasCodigo {
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+}
+
+.hboxCodigo {
+    -fx-background-color: lightseagreen;
+}
+
+.nombreTour {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+}
+
+.zonaAlumno {
+    -fx-background-color: lightgrey;
+}

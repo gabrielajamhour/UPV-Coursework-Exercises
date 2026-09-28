@@ -1,0 +1,53 @@
+.background {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+/* Botones generales */
+.button {
+    -fx-background-color: silver;
+    -fx-border-color: black transparent transparent black;
+    -fx-background-insets: 0;
+    -fx-border-insets: 0;
+}
+
+/* Botones de la última columna: restauramos el borde derecho */
+.orange-button {
+    -fx-background-color: orange;
+    -fx-border-color: black black transparent black;
+}
+
+/* Para el caso del último botón (punto), también borde inferior */
+.third-column-buttom {
+    -fx-border-color: black black transparent black;
+}
+
+.button:hover {
+    -fx-background-color: darkgray;
+}
+
+.orange-button:hover {
+    -fx-background-color: darkorange;
+}
+
+/*#button-1 {
+-fx-text-fill: rgb(17, 145, 213);
+-fx-border-color: rgba(255, 255, 255, .80);
+-fx-border-radius: 8;
+-fx-padding: 6 6 6 6;
+-fx-font: bold italic 12pt "LucidaBrightDemiBold";
+}
+
+#button-1:pressed {
+-fx-text-fill: rgb(17, 145, 213);
+-fx-border-color: rgba(255, 255, 255, .80);
+-fx-background-color: black;
+-fx-border-radius: 8;
+-fx-padding: 6 6 6 6;
+-fx-font: bold italic 12pt "LucidaBrightDemiBold";
+}
+
+.fondo-verde {
+    -fx-background-color: green;
+}*/
+

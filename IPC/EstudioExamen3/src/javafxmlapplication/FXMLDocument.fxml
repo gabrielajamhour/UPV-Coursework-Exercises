@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="556.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxmlapplication.FXMLDocumentController">
+   <children>
+      <Label fx:id="tituloPrincipal" text="GRUPOS UPV 2023">
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox fx:id="hBoxCodigo" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <TextField fx:id="campoCodigo1" alignment="CENTER" prefHeight="60.0" prefWidth="60.0" />
+            <Label fx:id="etiquetaCodigo1" text="-">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="campoCodigo2" alignment="CENTER" prefHeight="60.0" prefWidth="60.0" />
+            <Label fx:id="etiquetaCodigo2" text="-">
+               <HBox.margin>
+                  <Insets left="10.0" right="10.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="campoCodigo3" alignment="CENTER" prefHeight="60.0" prefWidth="60.0" />
+         </children>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox VBox.vgrow="ALWAYS">
+         <children>
+            <HBox prefHeight="251.0" prefWidth="600.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="vBoxZonaAlumno" prefHeight="200.0" prefWidth="245.0">
+                     <children>
+                        <Label text="Alumno">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <HBox alignment="CENTER">
+                           <children>
+                              <Label text="Nombre:">
+                                 <HBox.margin>
+                                    <Insets left="25.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <TextField fx:id="labelNombre" promptText="Gabriela Rego Jamhour" />
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox>
+                           <children>
+                              <Label text="Sexo:">
+                                 <HBox.margin>
+                                    <Insets left="45.0" right="10.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <RadioButton fx:id="toggleMujer" mnemonicParsing="false" text="Mujer">
+                                 <toggleGroup>
+                                    <ToggleGroup fx:id="sexo" />
+                                 </toggleGroup>
+                                 <HBox.margin>
+                                    <Insets right="10.0" />
+                                 </HBox.margin>
+                              </RadioButton>
+                              <RadioButton fx:id="toggleHombre" mnemonicParsing="false" text="Hombre" toggleGroup="$sexo" />
+                           </children>
+                        </HBox>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Button fx:id="anadirButton" mnemonicParsing="false" onAction="#anadir" text="Añadir">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets right="10.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="20.0" right="5.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <Separator orientation="VERTICAL" prefHeight="200.0">
+                     <HBox.margin>
+                        <Insets bottom="10.0" />
+                     </HBox.margin>
+                  </Separator>
+                  <VBox prefHeight="251.0" prefWidth="248.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="Componentes del grupo:">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </Label>
+                        <ListView fx:id="listView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </ListView>
+                        <HBox alignment="TOP_RIGHT">
+                           <children>
+                              <Button fx:id="crearButton" mnemonicParsing="false" onAction="#crear" text="Crear" />
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

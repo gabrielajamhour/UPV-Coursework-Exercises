@@ -1,0 +1,12 @@
+.button {
+    -fx-text-fill: white;
+    -fx-background-color: black;
+}
+
+.list-cell {
+    -fx-text-fill: brown;
+}
+
+.list-cell:selected {
+    -fx-background-color: lightblue;
+}
